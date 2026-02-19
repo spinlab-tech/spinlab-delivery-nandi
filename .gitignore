@@ -1,0 +1,8 @@
+# Spec Kit assets should be versioned
+# .specify/   <- keep tracked
+# specs/      <- keep tracked
+
+# Ignore local Codex state, but keep shared prompts if desired
+.codex/*
+!.codex/prompts/
+!.codex/prompts/**
