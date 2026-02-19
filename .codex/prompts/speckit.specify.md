@@ -24,6 +24,16 @@ The text the user typed after `/speckit.specify` in the triggering message **is*
 
 Given that feature description, do this:
 
+Workspace Policy Overrides (Nandi multi-repo):
+
+- This repository is the canonical Spec Kit home for all repos in the Nandi workspace.
+- Every spec MUST include a `## Multi-Repo Traceability` section with:
+  - `Affected Repositories` (repo-relative names like `nandi-be`, `nandi_frontend`)
+  - `Change Type` (`feature`, `initiative`, `bugfix`, `refactor`, `docs`, `config`, `meta`)
+  - `Linked Work Items` (optional ticket/PR placeholders)
+- Any markdown paths/references in spec and checklist output MUST be repo-relative.
+- Never write absolute filesystem paths (for example `/absolute/path/...`) in generated spec/checklist markdown.
+
 1. **Generate a concise short name** (2-4 words) for the branch:
    - Analyze the feature description and extract the most meaningful keywords
    - Create a 2-4 word short name that captures the essence of the feature
@@ -96,7 +106,7 @@ Given that feature description, do this:
     7. Identify Key Entities (if data involved)
     8. Return: SUCCESS (spec ready for planning)
 
-5. Write the specification to SPEC_FILE using the template structure, replacing placeholders with concrete details derived from the feature description (arguments) while preserving section order and headings.
+5. Write the specification to SPEC_FILE using the template structure, replacing placeholders with concrete details derived from the feature description (arguments) while preserving section order and headings, and ensure the `Multi-Repo Traceability` section is fully populated.
 
 6. **Specification Quality Validation**: After writing the initial spec, validate it against quality criteria:
 
@@ -115,6 +125,7 @@ Given that feature description, do this:
       - [ ] Focused on user value and business needs
       - [ ] Written for non-technical stakeholders
       - [ ] All mandatory sections completed
+      - [ ] Multi-Repo Traceability section is present and complete
       
       ## Requirement Completeness
       

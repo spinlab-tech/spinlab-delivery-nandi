@@ -1,43 +1,27 @@
 # AGENTS.md
 
-## Project Policy: Mandatory Spec Kit Records
+## Delivery Repo Policy
 
-This policy is required for all project changes made by Codex agents.
+This repository is the canonical Spec Kit record store for the multi-repo workspace rooted at `../Nandi`.
 
-### Scope
+Parent policy reference:
 
-Applies to:
+- `../AGENTS.md` (authoritative for scope and enforcement across all repositories)
 
-- New features
-- Initiatives
-- Bugfixes
-- Refactors that change behavior
+If this file and the parent policy differ, follow `../AGENTS.md`.
 
-### Required Workflow
+### Repository Responsibilities
 
-For every in-scope change:
+1. Keep all workspace change records under `specs/<id>-<slug>/`.
+2. Keep `spec.md` and checklists current for every tracked work item.
+3. Keep `.codex/prompts/*` and `.specify/templates/*` aligned with parent path hygiene and traceability requirements.
+4. Use repo-relative paths only in generated spec/checklist markdown output.
 
-1. Create or reuse a Spec Kit feature folder under `specs/<id>-<short-name>/`.
-2. Update the feature `spec.md` to record what changed and why.
-3. Update or create checklist artifacts when requirements/acceptance criteria change.
-4. Include the spec path in the final delivery summary.
+### Local Workflow Notes
 
-### Tooling
-
-Use Spec Kit scripts from this repository:
-
-- `.specify/scripts/bash/create-new-feature.sh`
-- Other `.specify` workflows as needed (`specify`, `plan`, `tasks`, etc.)
-
-### Output Convention
-
-- Use repo-relative paths in generated documentation (no absolute filesystem paths).
-
-### Exceptions
-
-Allowed only for:
-
-- Pure documentation edits with no product behavior impact
-- Repository meta changes that do not affect runtime behavior
-
-If an exception is used, explicitly state it in the final summary.
+1. Create new features with `.specify/scripts/bash/create-new-feature.sh`.
+2. Keep requirement checklists in `specs/<id>-<slug>/checklists/`.
+3. Ensure each spec contains:
+   - `Affected Repositories`
+   - `Change Type`
+   - `Linked Work Items`

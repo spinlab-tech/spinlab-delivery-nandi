@@ -5,6 +5,18 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+## Multi-Repo Traceability *(mandatory)*
+
+**Affected Repositories**:
+
+- [repo-name]
+
+**Change Type**: [feature | initiative | bugfix | refactor | docs | config | meta]
+
+**Linked Work Items**:
+
+- [Optional ticket/PR/reference]
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

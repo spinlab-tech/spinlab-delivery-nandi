@@ -36,6 +36,8 @@ You **MUST** consider the user input before proceeding (if not empty).
 1. **Setup**: Run `.specify/scripts/bash/check-prerequisites.sh --json` from repo root and parse JSON for FEATURE_DIR and AVAILABLE_DOCS list.
    - Internal processing may use absolute paths.
    - Any generated markdown references MUST use repo-relative paths.
+   - Never write absolute filesystem paths (for example `/absolute/path/...`) in generated checklist markdown.
+   - If repositories are referenced, use repo-relative names (for example `nandi-be`, `nandi_frontend`).
    - For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
 2. **Clarify intent (dynamic)**: Derive up to THREE initial contextual clarifying questions (no pre-baked catalog). They MUST:
