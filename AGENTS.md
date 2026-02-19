@@ -2,7 +2,7 @@
 
 ## Delivery Repo Policy
 
-This repository is the canonical Spec Kit record store for the multi-repo workspace rooted at `../Nandi`.
+This repository is the canonical Spec Kit record store for the multi-repo workspace rooted at `../../Nandi`.
 
 Parent policy reference:
 
