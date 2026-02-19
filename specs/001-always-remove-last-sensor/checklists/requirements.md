@@ -32,3 +32,9 @@
 ## Notes
 
 - This spec records the production initiative to always detach and remove previous sensor associations when re-pairing a sensor by name, including cross-account cleanup behavior.
+- Scope now explicitly includes `PATCH /members/pair-sensors` using the same cleanup-and-recreate behavior per row.
+- Deterministic duplicate handling is specified for bulk payload collisions on `mac_address` and `caravana`.
+- Traceability fields are present in the feature spec:
+  - `Affected Repositories`: `nandi-be`, `spinlab-delivery-nandi`
+  - `Change Type`: `bugfix`
+  - `Linked Work Items`: `TBD`
