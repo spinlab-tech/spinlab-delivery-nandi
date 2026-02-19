@@ -107,7 +107,7 @@ Given that feature description, do this:
       
       **Purpose**: Validate specification completeness and quality before proceeding to planning
       **Created**: [DATE]
-      **Feature**: [Link to spec.md]
+      **Feature**: `specs/<feature-folder>/spec.md`
       
       ## Content Quality
       
@@ -138,6 +138,9 @@ Given that feature description, do this:
       
       - Items marked incomplete require spec updates before `/speckit.clarify` or `/speckit.plan`
       ```
+
+      - Use repo-relative paths in generated markdown references.
+      - Never write absolute filesystem paths in spec/checklist output.
 
    b. **Run Validation Check**: Review the spec against each checklist item:
       - For each item, determine if it passes or fails

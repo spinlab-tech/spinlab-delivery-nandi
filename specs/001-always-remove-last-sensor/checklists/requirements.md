@@ -2,7 +2,7 @@
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-02-19  
-**Feature**: `/Users/federicoperez/Projects/Spinlab/Nandi/spinlab-delivery-nandi/specs/001-always-remove-last-sensor/spec.md`
+**Feature**: `specs/001-always-remove-last-sensor/spec.md`
 
 ## Content Quality
 
