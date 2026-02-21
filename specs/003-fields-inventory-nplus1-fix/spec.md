@@ -2,7 +2,7 @@
 
 **Feature Branch**: `[003-fields-inventory-nplus1-fix]`  
 **Created**: 2026-02-20  
-**Status**: Draft  
+**Status**: Implemented  
 **Input**: User description: "Fix `GET /fields` members inventory N+1 query while preserving behavior."
 
 ## Multi-Repo Traceability *(mandatory)*

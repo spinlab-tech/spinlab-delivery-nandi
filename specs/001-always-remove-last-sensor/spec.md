@@ -2,7 +2,7 @@
 
 **Feature Branch**: `001-always-remove-last-sensor`  
 **Created**: 2026-02-19  
-**Status**: Draft  
+**Status**: Implemented  
 **Input**: User description: "Always remove previous sensor references and sensor records when pairing a new sensor, without requiring removeLastSensor input."
 
 ## Traceability

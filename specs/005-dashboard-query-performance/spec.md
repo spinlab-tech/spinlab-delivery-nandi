@@ -2,7 +2,7 @@
 
 **Feature Branch**: `[005-dashboard-query-performance]`  
 **Created**: 2026-02-20  
-**Status**: Draft  
+**Status**: Implemented  
 **Input**: User description: "Admin dashboard `count-by-day` and `events-by-last-day` are taking ~18-19 seconds and must be optimized."
 
 ## Multi-Repo Traceability *(mandatory)*

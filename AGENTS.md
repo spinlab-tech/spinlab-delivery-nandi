@@ -16,6 +16,14 @@ If this file and the parent policy differ, follow `../AGENTS.md`.
 2. Keep `spec.md` and checklists current for every tracked work item.
 3. Keep `.codex/prompts/*` and `.specify/templates/*` aligned with parent path hygiene and traceability requirements.
 4. Use repo-relative paths only in generated spec/checklist markdown output.
+5. Apply parent `Spec Status Lifecycle` rules to all specs in this repository, including allowed values and final-response status rationale requirements.
+
+### Status Lifecycle Alignment
+
+1. Do not redefine or expand status values beyond the parent policy.
+2. When any spec in `specs/` is touched, evaluate and update its `**Status**` line if evidence changed.
+3. Ensure each touched spec has exactly one top-level `**Status**` metadata line.
+4. Keep checklist execution notes aligned with the chosen status when practical.
 
 ### Local Workflow Notes
 

@@ -2,7 +2,7 @@
 
 **Feature Branch**: `[002-multi-repo-speckit-policy]`  
 **Created**: 2026-02-19  
-**Status**: Draft  
+**Status**: Implemented  
 **Input**: User description: "Implement a parent-level multi-repo Spec Kit policy for the Nandi workspace with advisory enforcement, centralized records, and repo-relative path hygiene."
 
 ## Multi-Repo Traceability *(mandatory)*
