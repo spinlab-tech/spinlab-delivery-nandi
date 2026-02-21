@@ -19,3 +19,6 @@ The automation is scheduled to run regularly and should surface unresolved or re
 ## Reporting Policy
 - Keep this spec stable and focused on scope, traceability, and acceptance criteria.
 - Store per-run Sentry findings in automation memory and run inbox summaries, not in this spec.
+
+## Coverage Notes
+- Ensure all Nandi Sentry projects in org `spinlabtech` are included when running scans.
